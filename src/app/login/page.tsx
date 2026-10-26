@@ -120,7 +120,7 @@ export default function LoginPage() {
           </Link>
         </div>
 
-        {/* Demo Credentials Hint */}
+  {/* Demo Credentials Hint */}
 <div className="mt-6 p-3 rounded-xl bg-surface-soft border border-surface-border text-[11px] text-brandText-secondary space-y-1">
   <p className="font-bold text-navy flex items-center gap-1">
     <ShieldCheck className="w-3.5 h-3.5 text-primary" /> Initial Admin Access:
