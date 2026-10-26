@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
-import { Lock, Mail, ArrowRight, AlertCircle, ShieldCheck } from "lucide-react";
+import { Lock, Mail, ArrowRight, AlertCircle } from "lucide-react";
 import { useAuth } from "@/context/AuthContext";
 
 export default function LoginPage() {
@@ -119,19 +119,6 @@ export default function LoginPage() {
             Register here
           </Link>
         </div>
-
-  {/* Demo Credentials Hint */}
-<div className="mt-6 p-3 rounded-xl bg-surface-soft border border-surface-border text-[11px] text-brandText-secondary space-y-1">
-  <p className="font-bold text-navy flex items-center gap-1">
-    <ShieldCheck className="w-3.5 h-3.5 text-primary" /> Initial Admin Access:
-  </p>
-  <p>
-    Email: <code className="bg-white px-1 py-0.5 rounded border">admin@nstu.edu.bd</code>
-  </p>
-  <p>
-    Password: <code className="bg-white px-1 py-0.5 rounded border">nstuadmin123</code>
-  </p>
-</div>
       </div>
     </div>
   );
