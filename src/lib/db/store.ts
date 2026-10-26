@@ -38,9 +38,8 @@ interface DatabaseSchema {
   password_resets: PasswordResetToken[];
 }
 
-const DATA_DIR = path.join(process.cwd(), ".data");
+const DATA_DIR = process.env.VERCEL ? "/tmp" : path.join(process.cwd(), ".data");
 const DB_FILE = path.join(DATA_DIR, "db.json");
-
 function ensureDirectoryExistence(filePath: string) {
   const dirname = path.dirname(filePath);
   if (!fs.existsSync(dirname)) {
